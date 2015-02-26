@@ -186,7 +186,7 @@ public class SplashActivity extends BaseActivity {
 //                    i.setClass (SplashActivity.this, GuideActivity.class);
 
 //                } else {
-                    i.setClass (SplashActivity.this, MainActivity.class);
+                    i.setClass (SplashActivity.this,UnlockGesturePasswordActivity.class);
 //                    LogUtil.d (TAG, JSON.toJSONString (mPushInfo));
 //                    if (mPushInfo != null) {
 //                        Bundle bundle = new Bundle ();

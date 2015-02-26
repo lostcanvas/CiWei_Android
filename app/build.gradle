@@ -22,4 +22,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile files('libs/com.umeng.fb.v5.0.0.jar')
+    compile 'com.umeng.analytics:analytics:5.2.4'
 }
