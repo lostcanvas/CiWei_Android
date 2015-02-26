@@ -26,4 +26,5 @@ dependencies {
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile 'com.umeng.analytics:analytics:5.2.4'
     compile files('libs/com.umeng.fb.v5.0.0.jar')
+    compile files('libs/umeng-update-v2.4.2.jar')
 }
