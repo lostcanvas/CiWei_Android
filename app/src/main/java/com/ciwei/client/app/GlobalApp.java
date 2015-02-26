@@ -60,7 +60,7 @@ public class GlobalApp extends Application {
                     .diskCacheExtraOptions(480, 800, null)
                     .build();
         } else {
-            
+
             config = new ImageLoaderConfiguration.Builder(context).threadPriority(Thread.MAX_PRIORITY)
                     .denyCacheImageMultipleSizesInMemory()
                     .diskCacheFileNameGenerator(new HashCodeFileNameGenerator())
