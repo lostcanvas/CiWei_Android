@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_F0F0F0"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_titlebar_home" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/color_D6D6D6"
+        android:layout_height="55dp">
+
+        <com.ciwei.client.view.ClearEditText
+            android:id="@+id/search_clear_edit"
+            android:background="@drawable/corners_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginRight="12.5dp"
+            android:drawableLeft="@drawable/ic_glass"
+            android:paddingLeft="8dp"
+            android:hint="搜索"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="@color/color_333333"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_808080"
+        android:textSize="16sp"
+        android:text="5个账号可通过刺猬密保授权"
+        android:paddingLeft="12.5dp"
+        android:singleLine="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/lv_account"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/translate"
+            android:fadingEdge="none"
+            android:divider="@color/color_DDDDDD"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@color/translate"
+            android:persistentDrawingCache="animation|scrolling"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_bindaccount_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0sp"
+            android:visibility="invisible" />
+
+        <com.ciwei.client.view.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30dp"
+            android:layout_gravity="right"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+
+</LinearLayout>

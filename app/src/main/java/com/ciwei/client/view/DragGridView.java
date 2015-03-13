@@ -152,10 +152,8 @@ public class DragGridView extends GridView {
 
     public DragGridView(Context context, AttributeSet attrs, int defStyle) {
         super (context, attrs, defStyle);
-//        mVibrator = (Vibrator) context.getSystemService (Context.VIBRATOR_SERVICE);
         mWindowManager = (WindowManager) context.getSystemService (Context.WINDOW_SERVICE);
         mStatusHeight = getStatusHeight (context); // 获取状态栏的高度
-
         if (!mNumColumnsSet) {
             mNumColumns = AUTO_FIT;
         }
@@ -271,7 +269,6 @@ public class DragGridView extends GridView {
             }
             mNumColumns = numFittedColumns;
         }
-
         super.onMeasure (widthMeasureSpec, heightMeasureSpec);
     }
 

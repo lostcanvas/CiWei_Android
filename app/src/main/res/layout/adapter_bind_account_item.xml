@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_E0E0E0"
+        android:textColor="@color/color_454545"
+        android:layout_weight="1.0"
+        android:paddingLeft="12.5dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="A" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/adapter_app_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12.5dp"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/adapter_appname_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="淘宝"
+            android:layout_toRightOf="@id/adapter_app_img"
+            android:layout_alignTop="@id/adapter_app_img"
+            android:layout_marginTop="6dp" />
+        <TextView
+            android:id="@+id/adapter_web_site"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/color_808080"
+            android:layout_toRightOf="@id/adapter_app_img"
+            android:layout_below="@id/adapter_appname_tx"
+            android:layout_marginTop="6dp"
+            android:text="www.taobao.com"
+            />
+    </RelativeLayout>
+</LinearLayout>

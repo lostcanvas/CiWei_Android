@@ -2,14 +2,65 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@color/color_4393B7"
+    android:background="@color/color_ECECEC"
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_centerInParent="true"
+        android:id="@+id/splash_logo"
+        android:layout_width="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         android:src="@drawable/ic_splash_logo"
+        android:layout_height="82dp" />
+
+    <TextView
+        android:id="@+id/splash_tv_mibao"
+        android:textColor="@color/color_333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="刺猬密保"
+        android:textScaleX="1.0"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/splash_logo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/splash_ll_btn"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="60dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/splash_btn_reg"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:layout_marginRight="60dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="注册"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/color_4393B7"-->
+            <!--android:background="@color/color_FFFFFF" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/splash_btn_login"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:layout_marginRight="60dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="登录"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/color_4393B7"-->
+            <!--android:background="@color/color_FFFFFF" />-->
+    <!--</LinearLayout>-->
 </RelativeLayout>

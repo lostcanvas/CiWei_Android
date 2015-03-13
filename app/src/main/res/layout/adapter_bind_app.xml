@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="淘宝"
+        android:textColor="@color/color_333333"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/app_logo"
+        android:id="@+id/tv_app_name"
+        android:layout_alignTop="@id/app_logo"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_app_name"
+        android:id="@+id/app_desc"
+        android:textColor="@color/color_808080"
+        android:layout_toRightOf="@id/app_logo"
+        android:layout_marginLeft="14dp"
+        android:text="desc"
+        android:layout_marginTop="2dp" />
+
+    <ImageView
+        android:id="@+id/adapter_app_bind"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:src="@drawable/ic_bind_lock"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:scaleType="centerInside" />
+</RelativeLayout>

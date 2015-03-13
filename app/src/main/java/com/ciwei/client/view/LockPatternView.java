@@ -52,7 +52,6 @@ public class LockPatternView extends View {
     private Paint mPaint = new Paint();
     private Paint mPathPaint = new Paint();
 
-    // TODO: make this common with PhoneWindow
     static final int STATUS_BAR_HEIGHT = 25;
 
     /**
@@ -250,7 +249,7 @@ public class LockPatternView extends View {
 
         mPathPaint.setAntiAlias(true);
         mPathPaint.setDither(true);
-        mPathPaint.setColor(Color.YELLOW); // TODO this should be from the style
+        mPathPaint.setColor(Color.BLUE);
         mPathPaint.setAlpha(mStrokeAlpha);
         mPathPaint.setStyle(Paint.Style.STROKE);
         mPathPaint.setStrokeJoin(Paint.Join.ROUND);
@@ -892,7 +891,6 @@ public class LockPatternView extends View {
                 mInProgressX = centerX + dx;
                 mInProgressY = centerY + dy;
             }
-            // TODO: Infinite loop here...
             invalidate();
         }
 
@@ -905,7 +903,6 @@ public class LockPatternView extends View {
         final Path currentPath = mCurrentPath;
         currentPath.rewind();
 
-        // TODO: the path should be created and cached every time we hit-detect
         // a cell
         // only the last segment of the path should be computed here
         // draw the path of the pattern (unless the user is in progress, and
@@ -950,7 +947,7 @@ public class LockPatternView extends View {
             if (mPatternDisplayMode == DisplayMode.Wrong)
                 mPathPaint.setColor(Color.RED);
             else
-                mPathPaint.setColor(Color.YELLOW);
+                mPathPaint.setColor(Color.BLUE);
             canvas.drawPath(currentPath, mPathPaint);
         }
 

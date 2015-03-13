@@ -1,20 +1,76 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.ciwei.client.view.DragGridView
-        android:id="@+id/dragGridView"
-        android:listSelector="@android:color/transparent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:cacheColorHint="@android:color/transparent"
-        android:stretchMode="columnWidth"
-        android:gravity="center"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:numColumns="2" />
+    <include layout="@layout/include_titlebar_home" />
 
-</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <com.ciwei.client.view.MyFragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </com.ciwei.client.view.MyFragmentTabHost>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:background="@color/color_28303B"
+        android:orientation="horizontal"
+        android:layout_height="55dp">
+
+        <RadioButton
+            android:id="@+id/radio_btn_home"
+            android:layout_width="fill_parent"
+            android:button="@null"
+            android:text="首页"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawablePadding="2dp"
+            android:padding="0dp"
+            android:checked="true"
+            android:drawableTop="@drawable/fragment_home_selector"
+            android:textColor="@color/color_FFFFFF"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btn_scan_qr"
+            android:layout_width="102dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_home_scan"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:background="@color/color_35435c" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:button="@null"
+            android:text="我的"
+            android:id="@+id/radio_btn_my"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0dp"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/fragment_my_selector"
+            android:textColor="@color/color_FFFFFF"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

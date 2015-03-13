@@ -5,6 +5,10 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.ToolBarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:icon">@drawable/ic_drawer</item>
+    </style>
+
     <style name="ButtonGreen" parent="@android:style/Widget.Button">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">@drawable/skin_color_button</item>
@@ -16,4 +20,46 @@
         <item name="android:textColor">@drawable/skin_color_button</item>
         <item name="android:background">@drawable/common_btn_red</item>
     </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/translate</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+    <!--&lt;!&ndash; 应用于程序或者活动的主题 &ndash;&gt;-->
+    <!--<style name="CustomActionBarTheme" parent="@style/Theme.AppCompat">-->
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>-->
+        <!--<item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>-->
+        <!--<item name="android:actionMenuTextColor">@color/color_FFFFFF</item>-->
+        <!--&lt;!&ndash; 支持库兼容 &ndash;&gt;-->
+        <!--<item name="actionBarStyle">@style/MyActionBar</item>-->
+        <!--<item name="actionBarTabTextStyle">@style/MyActionBarTabText</item>-->
+        <!--<item name="actionMenuTextColor">@color/color_FFFFFF</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; ActionBar 样式 &ndash;&gt;-->
+    <!--<style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">-->
+        <!--<item name="android:titleTextStyle">@style/MyActionBarTitleText</item>-->
+        <!--<item name="android:background">@color/color_0099CC</item>-->
+        <!--&lt;!&ndash; 支持库兼容 &ndash;&gt;-->
+        <!--<item name="titleTextStyle">@style/MyActionBarTitleText</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; ActionBar 标题文本 &ndash;&gt;-->
+    <!--<style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">-->
+        <!--<item name="android:textColor">@color/color_FFFFFF</item>-->
+        <!--&lt;!&ndash; 文本颜色属性textColor是可以配合支持库向后兼容的 &ndash;&gt;-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; ActionBar Tab标签文本样式 &ndash;&gt;-->
+    <!--<style name="MyActionBarTabText" parent="@style/Widget.AppCompat.ActionBar.TabText">-->
+        <!--<item name="android:textColor">@color/color_FFFFFF</item>-->
+        <!--&lt;!&ndash; 文本颜色属性textColor是可以配合支持库向后兼容的 &ndash;&gt;-->
+    <!--</style>-->
 </resources>

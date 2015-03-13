@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_E6E6E6"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_FFFFFF"
+        android:layout_height="wrap_content">
+
+        <com.ciwei.client.view.CircleImageView
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:id="@+id/my_photo_img"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_splash_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sex_female"
+            android:layout_alignRight="@id/my_photo_img"
+            android:layout_alignBottom="@id/my_photo_img" />
+
+        <TextView
+            android:id="@+id/my_name_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/color_333333"
+            android:layout_toRightOf="@id/my_photo_img"
+            android:text="Vernon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignTop="@id/my_photo_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/color_808080"
+            android:layout_toRightOf="@id/my_photo_img"
+            android:text="2014-06-7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/my_name_tx" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drawer"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_email_logo"
+            android:layout_marginTop="17dp"
+            android:id="@+id/my_email_img"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱"
+            android:textSize="18sp"
+            android:textColor="@color/color_333333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/my_email_img" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drawer"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="3"
+            android:textColor="@color/color_808080"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_phone_logo"
+            android:layout_marginTop="17dp"
+            android:id="@+id/my_phone_img"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机"
+            android:textSize="18sp"
+            android:textColor="@color/color_333333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/my_phone_img" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drawer"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="3"
+            android:textColor="@color/color_808080"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_mine_logo"
+            android:layout_marginTop="17dp"
+            android:id="@+id/my_mine_img"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="18sp"
+            android:textColor="@color/color_333333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/my_mine_img" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drawer"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_808080"
+            android:layout_marginRight="50dp"
+            android:text="3"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_address_logo"
+            android:layout_marginTop="17dp"
+            android:id="@+id/my_address_img"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textSize="18sp"
+            android:textColor="@color/color_333333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/my_address_img" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drawer"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/color_808080"
+            android:text="3"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/color_FFFFFF"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_setting_logo"
+            android:layout_marginTop="17dp"
+            android:id="@+id/my_setting_img"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textSize="18sp"
+            android:textColor="@color/color_333333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/my_setting_img" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_drawer"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+</LinearLayout>
